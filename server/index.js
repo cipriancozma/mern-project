@@ -8,7 +8,7 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb+srv://ciprian:start1234@cluster0.vagnk.mongodb.net/merntutorial?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://user:pass@cluster0.vagnk.mongodb.net/...yourcollection?retryWrites=true&w=majority")
 
 app.get("/getUsers", (req, res) => {
     UserModel.find({}, (err, result) => {
